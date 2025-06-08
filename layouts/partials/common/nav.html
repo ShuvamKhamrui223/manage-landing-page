@@ -1,0 +1,81 @@
+<input type="checkbox" name="" id="menuToggle" class="hidden" />
+<nav
+  class="w-full md:h-28 inline-padding py-4 flex items-center justify-between"
+>
+  <img
+    src="/icons/logo.svg"
+    class="h-4 lg:h-6 w-auto"
+    loading="lazy"
+    alt="logo"
+    data-aos="fade-down"
+    data-aos-duration="500"
+  />
+  <!-- menu -->
+
+  <ul
+    class="hidden md:flex items-center gap-4"
+    data-aos="fade-down"
+    data-aos-duration="500"
+  >
+    {{ range .Site.Menus.main -}}
+    <li class="">
+      <a
+        href="{{ .URL }}"
+        class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize {{ if not .Params.isVisible }}
+          hidden
+        {{ end }}"
+        >{{ .Name }}</a
+      >
+    </li>
+    {{ end }}
+  </ul>
+
+  <div class="flex items-center gap-1.5 md:gap-4">
+    <span class="hidden md:block" id="languageToggle_desktop">
+      {{ partial "languageToggle.html" . }}
+    </span>
+
+    <span class="hidden md:block"
+      >{{ partial "common/get-started-button.html" . }}</span
+    >
+    <label for="menuToggle" class="block md:hidden cursor-pointer">
+      <img src="/icons/icon-hamburger.svg" alt="hamburger" class="invert" />
+    </label>
+  </div>
+</nav>
+
+<!-- menu for smaller screens -->
+<aside
+  id="sidebar"
+  class="absolute top-20 left-0 z-50 hidden transition-all duration-200 px-4 py-8 bg-light dark:bg-dark"
+>
+  <ul class="flex flex-col gap-4">
+    {{ range .Site.Menus.main -}}
+    <li>
+      <a
+        href="{{ .URL }}"
+        class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium"
+        >{{ .Name }}</a
+      >
+    </li>
+    {{ end }}
+  </ul>
+  <button class="filled-btn my-3">login</button>
+
+  <div class="flex items-center gap-1.5 sm:gap-4">
+    {{ partial "languageToggle.html" . }}
+  </div>
+</aside>
+
+<script>
+  const asideEl = document.getElementById("sidebar");
+  const languageToggle_desktop = document.getElementById(
+    "languageToggle_desktop"
+  );
+
+  window.addEventListener("DOMContentLoaded", () => {
+    if (document.documentElement.clientWidth > 425) {
+      asideEl.remove();
+    } else languageToggle_desktop.remove();
+  });
+</script>

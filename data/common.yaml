@@ -1,0 +1,19 @@
+socialLinks:
+  - icon: /icons/icon-instagram.svg
+    url: /
+    alt: ""
+  - icon: /icons/icon-facebook.svg
+    url: /
+    alt: ""
+  - icon: /icons/icon-pinterest.svg
+    url: /
+    alt: ""
+  - icon: /icons/icon-youtube.svg
+    url: /
+    alt: ""
+  - icon: /icons/icon-twitter.svg
+    url: /
+    alt: ""
+
+hero:
+  bannerImage: /icons/illustration-intro.svg

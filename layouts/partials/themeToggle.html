@@ -1,0 +1,40 @@
+<label
+  for="themeToggleBtn"
+  class="flex items-center cursor-pointer select-none relative"
+>
+  <input
+    type="checkbox"
+    id="themeToggleBtn"
+    class="peer sr-only appearance-none themeToggleBtn"
+  />
+  <div
+    class="block h-6 rounded-full bg-cover bg-[url(/images/theme-switch-light.jpg)] dark:bg-[url(/images/theme-switch-dark.jpg)] bg-center w-12"
+  ></div>
+  <div
+    class="absolute size-[18px] transition bg-white rounded-full top-1/2 -translate-y-1/2 peer-checked:-translate-x-10/12 peer-checked:left-10/12 left-6 -translate-x-5"
+  ></div>
+</label>
+
+<script>
+  const themeBtn = document.getElementById("themeToggleBtn");
+  const currentTheme = localStorage.getItem("theme");
+
+  themeBtn.addEventListener("click", () => {
+    if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    }
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    if (currentTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      themeBtn.setAttribute("checked", true);
+    }
+  });
+</script>

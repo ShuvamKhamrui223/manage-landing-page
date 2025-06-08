@@ -1,0 +1,21 @@
+- id: hero.heading
+  translation: Bringen Sie alle zusammen, um bessere Produkte zu entwickeln.
+- id: hero.description
+  translation: Manage erleichtert Softwareteams die Planung alltäglicher Aufgaben und behält dabei die übergeordneten Teamziele im Auge.
+
+- id: about.heading
+  translation: Was ist anders an Manage?
+
+- id: about.paragraph
+  translation: Manage bietet alle Funktionen, die Ihr Team benötigt, ohne die Komplexität. Unsere Software ist maßgeschneidert für moderne digitale Produktteams.
+
+- id: newsletter.inputPlaceholder
+  translation: Update in Ihrem Posteingang
+- id: newsletter.submitButtonText
+  translation: gehen
+
+- id: copyrightMessage
+  translation: Copyright 2020. Alle Rechte vorbehalten
+
+- id: getStartedButtonLabel
+  translation: Jetzt starten

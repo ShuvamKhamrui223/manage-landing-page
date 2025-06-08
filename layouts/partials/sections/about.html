@@ -1,0 +1,40 @@
+<section
+  class="block-padding inline-padding grid grid-cols-1 md:grid-cols-2 gap-20"
+>
+  <div class="flex flex-col justify-start items-center md:items-start gap-4">
+    <h2
+      class="text-4xl text-Very-Dark-Blue font-be-vietnam-pro-medium font-medium"
+    >
+      {{T "about.heading"}}
+    </h2>
+    <p
+      class="text-base font-be-vietnam-pro-regular text-Dark-Grayish-Blue max-w-[45ch]"
+    >
+      {{T "about.paragraph"}}
+    </p>
+  </div>
+  <ol class="flex flex-col gap-8">
+    {{$lang:= .Site.Language.Lang}} {{ range $index, $items:= .Site.Data.feature
+    }}
+
+    <li class="flex items-start gap-4 md:gap-6 lg:gap-8">
+      <p
+        class="text-Very-Pale-Red bg-Bright-Red px-6 py-1 rounded-full font-be-vietnam-pro-medium font-medium"
+      >
+        {{ if lt $index 9 }} 0{{add 1 $index}} {{ else }} {{add 1 $index}} {{
+        end }}
+      </p>
+      <div class="flex flex-col gap-4">
+        <h3
+          class="text-xl font-medium font-be-vietnam-pro-medium text-Very-Dark-Blue"
+        >
+          {{index .heading $lang }}
+        </h3>
+        <p class="text-base text-Dark-Grayish-Blue font-be-vietnam-pro-regular">
+          {{index .description $lang}}
+        </p>
+      </div>
+    </li>
+    {{ end }}
+  </ol>
+</section>

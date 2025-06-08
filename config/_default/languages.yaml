@@ -1,0 +1,18 @@
+en:
+  title: Frontend Mentor | Manage landing page
+  languageName: English
+  contentDir: content/en/
+  menuFile: en.toml
+  params:
+    description: description in English
+  weight: 1
+  rss: true
+de:
+  title: Frontend Mentor | Landingpage verwalten
+  languageName: Deutsch
+  contentDir: content/de/
+  menuFile: de.toml
+  weight: 2
+  params:
+    description: description in German
+  rss: true

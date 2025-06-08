@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@source "hugo_stats.json";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@font-face {
+  font-family: Be_Vietnam_Pro_400;
+  src: url("/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf");
+}
+@font-face {
+  font-family: Be_Vietnam_Pro_500;
+  src: url("/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf");
+}
+@font-face {
+  font-family: Be_Vietnam_Pro_700;
+  src: url("/fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf");
+}
+@theme {
+  --color-Bright-Red: hsl(12, 88%, 59%);
+  --color-Dark-Blue: hsl(228, 39%, 23%);
+  --color-Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --color-Very-Dark-Blue: hsl(233, 12%, 13%);
+  --color-Very-Pale-Red: hsl(13, 100%, 96%);
+  --color-Very-Light-Gray: hsl(0, 0%, 98%);
+
+  /* fonts */
+  --font-be-vietnam-pro-regular: Be_Vietnam_Pro_400;
+  --font-be-vietnam-pro-medium: Be_Vietnam_Pro_500;
+  --font-be-vietnam-pro-bold: Be_Vietnam_Pro_700;
+}
+
+.inline-padding {
+  @apply px-4 sm:px-8 lg:px-[10%];
+}
+.block-padding {
+  @apply py-20 md:py-14;
+}
+p {
+  @apply leading-[30px];
+}

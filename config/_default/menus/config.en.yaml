@@ -1,0 +1,37 @@
+menus:
+  main:
+    - name: home
+      pageRef: /
+      weight: 10
+      params:
+        isVisible: false
+    - name: Pricing
+      pageRef: /
+      weight: 20
+      params:
+        isVisible: true
+    - name: Product
+      pageRef: /
+      weight: 30
+      params:
+        isVisible: true
+    - name: about us
+      pageRef: /
+      weight: 40
+      params:
+        isVisible: true
+    - name: career
+      pageRef: /
+      weight: 50
+      params:
+        isVisible: true
+    - name: community
+      pageRef: /
+      weight: 60
+      params:
+        isVisible: true
+    - name: Privacy Policy
+      pageRef: /
+      weight: 70
+      params:
+        isVisible: false

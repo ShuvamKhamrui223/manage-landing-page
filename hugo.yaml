@@ -1,0 +1,33 @@
+baseURL: https://example.org/
+languageCode: en-us
+
+# multillingual configs
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+    contentDir: content/en/
+  de:
+    languageName: German
+    weight: 2
+    contentDir: content/de/
+
+# tailwind specific build commands
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: assets/notwatching/hugo_stats\.json
+      target: css
+    - source: (postcss|tailwind)\.config\.js
+      target: css
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - disableWatch: true
+      source: hugo_stats.json
+      target: assets/notwatching/hugo_stats.json

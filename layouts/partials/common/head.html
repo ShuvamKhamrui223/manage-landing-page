@@ -1,0 +1,18 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Site.Title }}</title>
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/images/favicon-32x32.png"
+  />
+
+  <!-- description -->
+  {{- if .IsHome -}}
+  <meta name="description" content="{{ .Site.Params.description }}" />
+  {{- else -}}
+  <meta name="description" content="{{ .Params.description }}" />
+  {{- end }} {{ partialCached "css.html" . }}
+</head>

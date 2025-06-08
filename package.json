@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "embla-carousel": "^8.6.0",
+    "tailwindcss": "^4.1.7"
+  },
+  "dependencies": {
+    "alpinejs": "^3.14.9",
+    "aos": "^2.3.4"
+  }
+}

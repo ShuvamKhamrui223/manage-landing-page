@@ -1,0 +1,37 @@
+menus:
+  main:
+    - name: heim
+      pageRef: /
+      weight: 10
+      params:
+        isVisible: false
+    - name: Preisgestaltung
+      pageRef: /
+      weight: 20
+      params:
+        isVisible: true
+    - name: Produkt
+      pageRef: /
+      weight: 30
+      params:
+        isVisible: true
+    - name: über uns
+      pageRef: /
+      weight: 40
+      params:
+        isVisible: true
+    - name: Karriere
+      pageRef: /
+      weight: 50
+      params:
+        isVisible: true
+    - name: Gemeinschaft
+      pageRef: /
+      weight: 60
+      params:
+        isVisible: true
+    - name: Datenschutzrichtlinie
+      pageRef: /
+      weight: 70
+      params:
+        isVisible: false

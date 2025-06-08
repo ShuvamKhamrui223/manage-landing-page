@@ -1,0 +1,44 @@
+<select
+  name=""
+  id="languageToggler"
+  class="relative w-fit rounded-md border dark:sm:border-light shadow-sm px-4 py-2 sm:bg-blue-100/15 text-sm text-dark md:text-light dark:text-light font-medium capitalize font-be-vietnam-pro-medium appearance-none cursor-pointer hover:bg-gray-100/25 focus:outline-none"
+>
+  <option value="" class="" hidden>select language</option>
+  {{ range $.Site.Home.AllTranslations }}
+  <option
+    class="text-dark dark:text-light flex items-center gap-2 px-4 py-2 text-sm font-bold"
+    role="menuitem"
+    tabindex="-1"
+    {{
+    if
+    eq
+    $.Site.Language.Lang
+    .Lang
+    }}selected{{
+    end
+    }}
+    value="{{.Language.LanguageCode}}"
+    id="menu-item-{{ .Language.LanguageCode }}"
+  >
+    <img
+      src="/icons/{{.Language.LanguageCode}}-flag.svg"
+      alt=""
+      class="size-5"
+    />
+    <a href="{{.Permalink | relURL }}" class="">
+      {{ .Language.LanguageName }}
+    </a>
+  </option>
+  {{end}}
+</select>
+
+<script>
+  const toggleEl = document.getElementById("languageToggler");
+
+  toggleEl.addEventListener("change", (e) => {
+    e.currentTarget.value
+      ? (location.pathname = "/" + e.currentTarget.value)
+      : null;
+    toggleEl.setAttribute("selected", true);
+  });
+</script>
