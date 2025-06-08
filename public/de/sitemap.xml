@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/de/categories/</loc>
+    <loc>https://shuvamkhamrui223.github.io/fm-manage-landing-page/de/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.org/en/categories/"
+                href="https://shuvamkhamrui223.github.io/fm-manage-landing-page/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.org/de/categories/"
+                href="https://shuvamkhamrui223.github.io/fm-manage-landing-page/de/categories/"
                 />
   </url><url>
-    <loc>https://example.org/de/tags/</loc>
+    <loc>https://shuvamkhamrui223.github.io/fm-manage-landing-page/de/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.org/en/tags/"
+                href="https://shuvamkhamrui223.github.io/fm-manage-landing-page/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.org/de/tags/"
+                href="https://shuvamkhamrui223.github.io/fm-manage-landing-page/de/tags/"
                 />
   </url>
 </urlset>
