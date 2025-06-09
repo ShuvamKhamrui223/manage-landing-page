@@ -19,7 +19,6 @@ languages:
 build:
   buildStats:
     enable: true
-    enablePostCSS: true
   cachebusters:
     - source: assets/notwatching/hugo_stats\.json
       target: css
