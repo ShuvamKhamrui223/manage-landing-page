@@ -1,23 +1,363 @@
-<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Frontend Mentor | Manage landing page</title><link rel=icon type=image/png sizes=32x32 href=/images/favicon-32x32.png><meta name=description content>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | Manage landing page</title>
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/images/favicon-32x32.png"
+  />
+
+  <meta name="description" content="" /> 
   
     
     
       
         
-          <link rel="stylesheet" href="/css/main.9784d21bcd900a1cdd0c6dcc136707416bfacf1a7f3d7503d92c04a601149c61.css" integrity="sha256-l4TSG82QChzdDG3ME2cHQWv6zxp/PXUD2SwEpgEUnGE=" crossorigin="anonymous">
+          <link rel="stylesheet" href="/fm-manage-landing-page/css/main.9784d21bcd900a1cdd0c6dcc136707416bfacf1a7f3d7503d92c04a601149c61.css" integrity="sha256-l4TSG82QChzdDG3ME2cHQWv6zxp/PXUD2SwEpgEUnGE=" crossorigin="anonymous">
         
       
     
   
-</head><body class="min-h-screen flex flex-col items-center"><input type=checkbox id=menuToggle class=hidden><nav class="w-full md:h-28 inline-padding py-4 flex items-center justify-between"><img src=/icons/logo.svg class="h-4 lg:h-6 w-auto" loading=lazy alt=logo data-aos=fade-down data-aos-duration=500><ul class="hidden md:flex items-center gap-4" data-aos=fade-down data-aos-duration=500><li><a href class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize
-hidden">home</a></li><li><a href class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize">Pricing</a></li><li><a href class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize">Product</a></li><li><a href class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize">about us</a></li><li><a href class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize">career</a></li><li><a href class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize">community</a></li><li><a href class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize
-hidden">Privacy Policy</a></li></ul><div class="flex items-center gap-1.5 md:gap-4"><span class="hidden md:block" id=languageToggle_desktop><select id=languageToggler class="relative w-fit rounded-md border dark:sm:border-light shadow-sm px-4 py-2 sm:bg-blue-100/15 text-sm text-dark md:text-light dark:text-light font-medium capitalize font-be-vietnam-pro-medium appearance-none cursor-pointer hover:bg-gray-100/25 focus:outline-none"><option value hidden>select language</option></select>
-<script>const toggleEl=document.getElementById("languageToggler");toggleEl.addEventListener("change",e=>{e.currentTarget.value?location.pathname="/"+e.currentTarget.value:null,toggleEl.setAttribute("selected",!0)})</script></span><span class="hidden md:block"><button class="text-sm font-medium font-be-vietnam-pro-medium capitalize whitespace-nowrap bg-Bright-Red hover:bg-Bright-Red/80 text-Very-Pale-Red px-4 py-2.5 shadow-md shadow-Bright-Red rounded-full cursor-pointer">
-get started
+
+</head>
+
+  <body class="min-h-screen flex flex-col items-center">
+    <input type="checkbox" name="" id="menuToggle" class="hidden" />
+<nav
+  class="w-full md:h-28 inline-padding py-4 flex items-center justify-between"
+>
+  <img
+    src="/icons/logo.svg"
+    class="h-4 lg:h-6 w-auto"
+    loading="lazy"
+    alt="logo"
+    data-aos="fade-down"
+    data-aos-duration="500"
+  />
+  
+
+  <ul
+    class="hidden md:flex items-center gap-4"
+    data-aos="fade-down"
+    data-aos-duration="500"
+  >
+    <li class="">
+      <a
+        href=""
+        class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize 
+          hidden
+        "
+        >home</a
+      >
+    </li>
+    <li class="">
+      <a
+        href=""
+        class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize "
+        >Pricing</a
+      >
+    </li>
+    <li class="">
+      <a
+        href=""
+        class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize "
+        >Product</a
+      >
+    </li>
+    <li class="">
+      <a
+        href=""
+        class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize "
+        >about us</a
+      >
+    </li>
+    <li class="">
+      <a
+        href=""
+        class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize "
+        >career</a
+      >
+    </li>
+    <li class="">
+      <a
+        href=""
+        class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize "
+        >community</a
+      >
+    </li>
+    <li class="">
+      <a
+        href=""
+        class="text-base sm:text-xs lg:text-sm font-be-vietnam-pro-medium text-Very-Dark-Blue hover:text-Dark-Grayish-Blue capitalize 
+          hidden
+        "
+        >Privacy Policy</a
+      >
+    </li>
+    
+  </ul>
+
+  <div class="flex items-center gap-1.5 md:gap-4">
+    <span class="hidden md:block" id="languageToggle_desktop">
+      <select
+  name=""
+  id="languageToggler"
+  class="relative w-fit rounded-md border dark:sm:border-light shadow-sm px-4 py-2 sm:bg-blue-100/15 text-sm text-dark md:text-light dark:text-light font-medium capitalize font-be-vietnam-pro-medium appearance-none cursor-pointer hover:bg-gray-100/25 focus:outline-none"
+>
+  <option value="" class="" hidden>select language</option>
+  
+</select>
+
+<script>
+  const toggleEl = document.getElementById("languageToggler");
+
+  toggleEl.addEventListener("change", (e) => {
+    e.currentTarget.value
+      ? (location.pathname = "/" + e.currentTarget.value)
+      : null;
+    toggleEl.setAttribute("selected", true);
+  });
+</script>
+
+    </span>
+
+    <span class="hidden md:block"
+      ><button
+  class="text-sm font-medium font-be-vietnam-pro-medium capitalize whitespace-nowrap bg-Bright-Red hover:bg-Bright-Red/80 text-Very-Pale-Red px-4 py-2.5 shadow-md shadow-Bright-Red rounded-full cursor-pointer"
+>
+  get started
 </button>
-</span><label for=menuToggle class="block md:hidden cursor-pointer"><img src=/icons/icon-hamburger.svg alt=hamburger class=invert></label></div></nav><aside id=sidebar class="absolute top-20 left-0 z-50 hidden transition-all duration-200 px-4 py-8 bg-light dark:bg-dark"><ul class="flex flex-col gap-4"><li><a href class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium">home</a></li><li><a href class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium">Pricing</a></li><li><a href class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium">Product</a></li><li><a href class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium">about us</a></li><li><a href class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium">career</a></li><li><a href class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium">community</a></li><li><a href class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium">Privacy Policy</a></li></ul><button class="filled-btn my-3">login</button><div class="flex items-center gap-1.5 sm:gap-4"><select id=languageToggler class="relative w-fit rounded-md border dark:sm:border-light shadow-sm px-4 py-2 sm:bg-blue-100/15 text-sm text-dark md:text-light dark:text-light font-medium capitalize font-be-vietnam-pro-medium appearance-none cursor-pointer hover:bg-gray-100/25 focus:outline-none"><option value hidden>select language</option></select>
-<script>const toggleEl=document.getElementById("languageToggler");toggleEl.addEventListener("change",e=>{e.currentTarget.value?location.pathname="/"+e.currentTarget.value:null,toggleEl.setAttribute("selected",!0)})</script></div></aside><script>const asideEl=document.getElementById("sidebar"),languageToggle_desktop=document.getElementById("languageToggle_desktop");window.addEventListener("DOMContentLoaded",()=>{document.documentElement.clientWidth>425?asideEl.remove():languageToggle_desktop.remove()})</script><main class="w-full flex flex-col gap-y-2"><h1 class="text-4xl text-blue-100">this is custom error</h1></main><footer class="w-full min-h-[15rem] bg-Very-Dark-Blue block-padding md:py-20 inline-padding grid gap-8 sm:gap-4 lg:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"><div class="h-full flex flex-col justify-between items-center md:items-start gap-4"><img src=/icons/logo.svg class="h-6 w-auto invert" loading=lazy alt=logo data-aos=fade-down data-aos-duration=500><ul class="flex items-center gap-2"><li><a href=/ class=hover:text-Bright-Red><img src=/icons/icon-instagram.svg alt></a></li><li><a href=/ class=hover:text-Bright-Red><img src=/icons/icon-facebook.svg alt></a></li><li><a href=/ class=hover:text-Bright-Red><img src=/icons/icon-pinterest.svg alt></a></li><li><a href=/ class=hover:text-Bright-Red><img src=/icons/icon-youtube.svg alt></a></li><li><a href=/ class=hover:text-Bright-Red><img src=/icons/icon-twitter.svg alt></a></li></ul></div><ul class="text-center md:text-left columns-1 md:columns-2 md:gap-24"><li class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"><a href>home</a></li><li class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"><a href>Pricing</a></li><li class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"><a href>Product</a></li><li class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"><a href>about us</a></li><li class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"><a href>career</a></li><li class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"><a href>community</a></li><li class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"><a href>Privacy Policy</a></li></ul><div class="flex flex-col items-center md:items-end justify-between"><form class="flex flex-col md:flex-row gap-2 items-center"><input type=email placeholder="update in your inbox" class="bg-Very-Light-Gray
-placeholder:text-Dark-Grayish-Blue placeholder:text-sm text-sm
-font-be-vietnam-pro-regular w-full px-4 py-2.5 rounded-full">
-<button class="bg-Bright-Red text-Very-Light-Gray font-be-vietnam-pro-regular px-5 py-2.5 rounded-full">
-Go</button></form><p class="text-Dark-Grayish-Blue block">Copyright 2020. All Rights Reserved</p></div></footer></body></html>
+</span
+    >
+    <label for="menuToggle" class="block md:hidden cursor-pointer">
+      <img src="/icons/icon-hamburger.svg" alt="hamburger" class="invert" />
+    </label>
+  </div>
+</nav>
+
+
+<aside
+  id="sidebar"
+  class="absolute top-20 left-0 z-50 hidden transition-all duration-200 px-4 py-8 bg-light dark:bg-dark"
+>
+  <ul class="flex flex-col gap-4">
+    <li>
+      <a
+        href=""
+        class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium"
+        >home</a
+      >
+    </li>
+    <li>
+      <a
+        href=""
+        class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium"
+        >Pricing</a
+      >
+    </li>
+    <li>
+      <a
+        href=""
+        class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium"
+        >Product</a
+      >
+    </li>
+    <li>
+      <a
+        href=""
+        class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium"
+        >about us</a
+      >
+    </li>
+    <li>
+      <a
+        href=""
+        class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium"
+        >career</a
+      >
+    </li>
+    <li>
+      <a
+        href=""
+        class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium"
+        >community</a
+      >
+    </li>
+    <li>
+      <a
+        href=""
+        class="text-dark dark:text-light text-lg font-be-vietnam-pro-medium"
+        >Privacy Policy</a
+      >
+    </li>
+    
+  </ul>
+  <button class="filled-btn my-3">login</button>
+
+  <div class="flex items-center gap-1.5 sm:gap-4">
+    <select
+  name=""
+  id="languageToggler"
+  class="relative w-fit rounded-md border dark:sm:border-light shadow-sm px-4 py-2 sm:bg-blue-100/15 text-sm text-dark md:text-light dark:text-light font-medium capitalize font-be-vietnam-pro-medium appearance-none cursor-pointer hover:bg-gray-100/25 focus:outline-none"
+>
+  <option value="" class="" hidden>select language</option>
+  
+</select>
+
+<script>
+  const toggleEl = document.getElementById("languageToggler");
+
+  toggleEl.addEventListener("change", (e) => {
+    e.currentTarget.value
+      ? (location.pathname = "/" + e.currentTarget.value)
+      : null;
+    toggleEl.setAttribute("selected", true);
+  });
+</script>
+
+  </div>
+</aside>
+
+<script>
+  const asideEl = document.getElementById("sidebar");
+  const languageToggle_desktop = document.getElementById(
+    "languageToggle_desktop"
+  );
+
+  window.addEventListener("DOMContentLoaded", () => {
+    if (document.documentElement.clientWidth > 425) {
+      asideEl.remove();
+    } else languageToggle_desktop.remove();
+  });
+</script>
+
+    <main class="w-full flex flex-col gap-y-2">
+      
+
+<h1 class="text-4xl text-blue-100">this is custom error</h1>
+
+    </main>
+    <footer
+  class="w-full min-h-[15rem] bg-Very-Dark-Blue block-padding md:py-20 inline-padding grid gap-8 sm:gap-4 lg:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+>
+  <div
+    class="h-full flex flex-col justify-between items-center md:items-start gap-4"
+  >
+    <img
+      src="/icons/logo.svg"
+      class="h-6 w-auto invert"
+      loading="lazy"
+      alt="logo"
+      data-aos="fade-down"
+      data-aos-duration="500"
+    />
+    <ul class="flex items-center gap-2">
+      
+      <li>
+        <a href="/" class="hover:text-Bright-Red">
+          <img src="/icons/icon-instagram.svg" alt="" />
+        </a>
+      </li>
+      
+      <li>
+        <a href="/" class="hover:text-Bright-Red">
+          <img src="/icons/icon-facebook.svg" alt="" />
+        </a>
+      </li>
+      
+      <li>
+        <a href="/" class="hover:text-Bright-Red">
+          <img src="/icons/icon-pinterest.svg" alt="" />
+        </a>
+      </li>
+      
+      <li>
+        <a href="/" class="hover:text-Bright-Red">
+          <img src="/icons/icon-youtube.svg" alt="" />
+        </a>
+      </li>
+      
+      <li>
+        <a href="/" class="hover:text-Bright-Red">
+          <img src="/icons/icon-twitter.svg" alt="" />
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <ul class="text-center md:text-left columns-1 md:columns-2 md:gap-24">
+    
+
+    <li
+      class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"
+    >
+      <a href="" class="">home</a>
+    </li>
+    
+
+    <li
+      class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"
+    >
+      <a href="" class="">Pricing</a>
+    </li>
+    
+
+    <li
+      class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"
+    >
+      <a href="" class="">Product</a>
+    </li>
+    
+
+    <li
+      class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"
+    >
+      <a href="" class="">about us</a>
+    </li>
+    
+
+    <li
+      class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"
+    >
+      <a href="" class="">career</a>
+    </li>
+    
+
+    <li
+      class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"
+    >
+      <a href="" class="">community</a>
+    </li>
+    
+
+    <li
+      class="text-Very-Light-Gray capitalize font-be-vietnam-pro-regular hover:text-Bright-Red mb-4"
+    >
+      <a href="" class="">Privacy Policy</a>
+    </li>
+    
+  </ul>
+
+  <div class="flex flex-col items-center md:items-end justify-between">
+    <form class="flex flex-col md:flex-row gap-2 items-center">
+      <input type="email" name="" id="" placeholder="update in your inbox" class="bg-Very-Light-Gray
+      placeholder:text-Dark-Grayish-Blue placeholder:text-sm text-sm
+      font-be-vietnam-pro-regular w-full px-4 py-2.5 rounded-full" />
+      <button
+        class="bg-Bright-Red text-Very-Light-Gray font-be-vietnam-pro-regular px-5 py-2.5 rounded-full"
+      >
+        Go
+      </button>
+    </form>
+
+    <p class="text-Dark-Grayish-Blue block">Copyright 2020. All Rights Reserved</p>
+  </div>
+</footer>
+
+  </body>
+</html>
