@@ -1,7 +1,10 @@
 {
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.7",
+    "autoprefixer": "^10.4.21",
     "embla-carousel": "^8.6.0",
+    "postcss": "^8.5.4",
+    "postcss-cli": "^11.0.1",
     "tailwindcss": "^4.1.7"
   },
   "dependencies": {
