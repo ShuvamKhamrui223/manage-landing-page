@@ -15,6 +15,10 @@ languages:
     weight: 2
     contentDir: content/de/
 
+caches:
+  images:
+    dir: :cacheDir/images
+
 # tailwind specific build commands
 build:
   buildStats:
@@ -31,7 +35,3 @@ module:
     - disableWatch: true
       source: hugo_stats.json
       target: assets/notwatching/hugo_stats.json
-
-caches:
-  images:
-    dir: :cacheDir/images
