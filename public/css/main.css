@@ -254,9 +254,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .size-\[18px\] {
     width: 18px;
     height: 18px;
@@ -269,9 +266,6 @@
   }
   .h-full {
     height: 100%;
-  }
-  .min-h-40 {
-    min-height: calc(var(--spacing) * 40);
   }
   .min-h-\[15rem\] {
     min-height: 15rem;
@@ -405,9 +399,6 @@
   .bg-center {
     background-position: center;
   }
-  .object-contain {
-    object-fit: contain;
-  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -434,9 +425,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .font-\[Open_Sans\] {
-    font-family: Open Sans;
   }
   .font-be-vietnam-pro-bold {
     font-family: var(--font-be-vietnam-pro-bold);
@@ -540,10 +528,6 @@
   }
   .ring-black {
     --tw-ring-color: var(--color-black);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .invert {
     --tw-invert: invert(100%);
@@ -817,15 +801,15 @@
 }
 @font-face {
   font-family: Be_Vietnam_Pro_400;
-  src: url("/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf");
+  src: url("../fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf");
 }
 @font-face {
   font-family: Be_Vietnam_Pro_500;
-  src: url("/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf");
+  src: url("../fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf");
 }
 @font-face {
   font-family: Be_Vietnam_Pro_700;
-  src: url("/fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf");
+  src: url("../fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf");
 }
 .inline-padding {
   padding-inline: calc(var(--spacing) * 4);
@@ -959,11 +943,6 @@ p {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -1049,7 +1028,6 @@ p {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;

@@ -4,15 +4,15 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @font-face {
   font-family: Be_Vietnam_Pro_400;
-  src: url("/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf");
+  src: url("../fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf");
 }
 @font-face {
   font-family: Be_Vietnam_Pro_500;
-  src: url("/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf");
+  src: url("../fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf");
 }
 @font-face {
   font-family: Be_Vietnam_Pro_700;
-  src: url("/fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf");
+  src: url("../fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf");
 }
 @theme {
   --color-Bright-Red: hsl(12, 88%, 59%);

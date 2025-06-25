@@ -2,8 +2,9 @@
 <nav
   class="w-full md:h-28 inline-padding py-4 flex items-center justify-between"
 >
+  {{ $image := resources.Get "icons/logo.svg" }}
   <img
-    src="/icons/logo.svg"
+    src="{{ $image.RelPermalink }}"
     class="h-4 lg:h-6 w-auto"
     loading="lazy"
     alt="logo"

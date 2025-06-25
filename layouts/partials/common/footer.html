@@ -16,7 +16,8 @@
       {{ range .Site.Data.common.socialLinks }}
       <li>
         <a href="{{.url}}" class="hover:text-Bright-Red">
-          <img src="{{.icon}}" alt="" />
+          {{ $image := resources.Get .icon }}
+          <img src="{{$image.RelPermalink}}" alt="" />
         </a>
       </li>
       {{ end }}

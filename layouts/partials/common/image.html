@@ -1,0 +1,28 @@
+{{ $src := .src }} {{ $alt := .Text | default "image" }} {{ $title := .Title
+}}{{ with resources.Get $src }} {{ if eq .MediaType.SubType "svg" }}
+<img
+  src="{{ $src }}"
+  alt="{{ $alt }}"
+  {{
+  if
+  $title
+  }}title="{{ $title }}"
+  {{
+  end
+  }}
+  loading="lazy"
+/>
+{{ else }} {{ $resized := .Resize "300x300 webp" }}
+<img
+  src="{{ $resized.RelPermalink }}"
+  alt="{{ $alt }}"
+  {{
+  if
+  $title
+  }}title="{{ $title }}"
+  {{
+  end
+  }}
+  loading="lazy"
+/>
+{{ end }} {{ end }}
