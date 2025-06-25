@@ -2,28 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://shuvamkhamrui223.github.io/manage-landing-page/de/categories/</loc>
+    <loc>https://example.org/de/</loc>
+    <lastmod>2025-05-27T21:14:12+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://shuvamkhamrui223.github.io/manage-landing-page/en/categories/"
+                href="https://example.org/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://shuvamkhamrui223.github.io/manage-landing-page/de/categories/"
+                href="https://example.org/de/"
                 />
   </url><url>
-    <loc>https://shuvamkhamrui223.github.io/manage-landing-page/de/tags/</loc>
+    <loc>https://example.org/de/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://shuvamkhamrui223.github.io/manage-landing-page/en/tags/"
+                href="https://example.org/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://shuvamkhamrui223.github.io/manage-landing-page/de/tags/"
+                href="https://example.org/de/categories/"
+                />
+  </url><url>
+    <loc>https://example.org/de/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.org/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.org/de/tags/"
                 />
   </url>
 </urlset>

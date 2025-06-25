@@ -61,6 +61,7 @@
       "font-be-vietnam-pro-bold",
       "font-be-vietnam-pro-medium",
       "font-be-vietnam-pro-regular",
+      "font-bold",
       "font-medium",
       "font-semibold",
       "gap-1.5",
@@ -140,6 +141,7 @@
       "shadow-Bright-Red",
       "shadow-md",
       "shadow-sm",
+      "size-5",
       "sm:bg-blue-100/15",
       "sm:gap-4",
       "sm:text-xs",
@@ -169,6 +171,8 @@
       "",
       "languageToggle_desktop",
       "languageToggler",
+      "menu-item-de",
+      "menu-item-en",
       "menuToggle",
       "sidebar"
     ]
