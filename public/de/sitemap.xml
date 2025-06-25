@@ -2,41 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://shuvamkhamrui223.github.io/manage-landing-page/de/</loc>
+    <loc>http://localhost:1313/de/</loc>
     <lastmod>2025-05-27T21:14:12+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://shuvamkhamrui223.github.io/manage-landing-page/en/"
+                href="http://localhost:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://shuvamkhamrui223.github.io/manage-landing-page/de/"
+                href="http://localhost:1313/de/"
                 />
   </url><url>
-    <loc>https://shuvamkhamrui223.github.io/manage-landing-page/de/categories/</loc>
+    <loc>http://localhost:1313/de/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://shuvamkhamrui223.github.io/manage-landing-page/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://shuvamkhamrui223.github.io/manage-landing-page/de/categories/"
+                href="http://localhost:1313/de/categories/"
                 />
   </url><url>
-    <loc>https://shuvamkhamrui223.github.io/manage-landing-page/de/tags/</loc>
+    <loc>http://localhost:1313/de/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://shuvamkhamrui223.github.io/manage-landing-page/en/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://shuvamkhamrui223.github.io/manage-landing-page/de/tags/"
+                href="http://localhost:1313/de/tags/"
                 />
   </url>
 </urlset>

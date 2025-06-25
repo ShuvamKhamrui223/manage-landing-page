@@ -1,4 +1,4 @@
-baseURL: https://example.org
+baseURL: https://shuvamkhamrui223.github.io/manage-landing-page/
 
 # multillingual configs
 defaultContentLanguage: en
@@ -8,7 +8,7 @@ languages:
     title: Frontend Mentor | Manage landing page
     languageName: English
     languageCode: en
-    contentDir: content/en/
+    contentDir: content/en
     menuFile: en.yaml
     params:
       description: description in English
@@ -18,7 +18,7 @@ languages:
     title: Frontend Mentor | Landingpage verwalten
     languageName: Deutsch
     languageCode: de
-    contentDir: content/de/
+    contentDir: content/de
     menuFile: de.yaml
     weight: 2
     params:
