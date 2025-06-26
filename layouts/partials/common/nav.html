@@ -1,6 +1,6 @@
-<input type="checkbox" name="" id="menuToggle" class="hidden" />
+<input type="checkbox" name="" id="menuToggle" class="hidden peer" />
 <nav
-  class="w-full md:h-28 inline-padding py-4 flex items-center justify-between"
+  class="w-full relative md:h-28 inline-padding py-6 md:py-4 flex items-center justify-between"
 >
   {{ $image := resources.Get "icons/logo.svg" }}
   <img
@@ -40,7 +40,9 @@
       >{{ partial "common/get-started-button.html" . }}</span
     >
     <label for="menuToggle" class="block md:hidden cursor-pointer">
-      <img src="/icons/icon-hamburger.svg" alt="hamburger" class="invert" />
+      {{ $image := resources.Get "icons/icon-hamburger.svg" }}
+
+      <img src="{{$image.RelPermalink}}" alt="hamburger" class="" />
     </label>
   </div>
 </nav>
@@ -48,9 +50,14 @@
 <!-- menu for smaller screens -->
 <aside
   id="sidebar"
-  class="absolute top-20 left-0 z-50 hidden transition-all duration-200 px-4 py-8 bg-light dark:bg-dark"
+  class="absolute top-5 left-1/2 -translate-x-1/2 hidden peer-checked:flex flex-col items-center transition-discrete duration-150 px-4 py-8 bg-Very-Light-Gray w-[90%]"
 >
-  <ul class="flex flex-col gap-4">
+  <label for="menuToggle" class="absolute top-5 right-5 cursor-pointer">
+    {{ $image := resources.Get "icons/icon-close.svg" }}
+
+    <img src="{{$image.RelPermalink}}" alt="" class="size-4" />
+  </label>
+  <ul class="flex flex-col gap-4 items-center">
     {{ range .Site.Menus.main -}}
     <li>
       <a
@@ -67,16 +74,3 @@
     {{ partial "languageToggle.html" . }}
   </div>
 </aside>
-
-<script>
-  const asideEl = document.getElementById("sidebar");
-  const languageToggle_desktop = document.getElementById(
-    "languageToggle_desktop"
-  );
-
-  window.addEventListener("DOMContentLoaded", () => {
-    if (document.documentElement.clientWidth > 425) {
-      asideEl.remove();
-    } else languageToggle_desktop.remove();
-  });
-</script>

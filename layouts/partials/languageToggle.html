@@ -6,11 +6,11 @@
   </button>
 
   <div
-    class="hidden group-hover:block absolute top-full left-0 z-50 w-48 rounded-md shadow-lg bg-gray-200 dark:bg-dark max-[425px]:bg-gray-950/50 ring-1 ring-black ring-opacity-5 focus:outline-none"
+    class="hidden group-hover:block absolute top-full left-0 z-50 mt-2 w-48 rounded-md shadow-lg bg-gray-100 dark:bg-dark max-[425px]:bg-gray-950/50 ring-1 ring-black ring-opacity-5 focus:outline-none"
   >
     {{ range $.Site.Home.AllTranslations }}
     <span
-      class="text-dark dark:text-light flex items-center gap-2 px-4 py-2 text-sm font-bold"
+      class="text-dark dark:text-light flex items-center gap-2 px-4 py-2 text-sm font-bold hover:bg-orange-500 hover:text-orange-50"
       role="menuitem"
       tabindex="-1"
       id="menu-item-{{ .Language.LanguageCode }}"
